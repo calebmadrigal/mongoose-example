@@ -7,6 +7,11 @@ var mongoose = require('mongoose');
 var q = require('q');
 var _ = require('lodash');
 
+////////////////////////////////////////////////////////////////////////////////////// DB CONNECTION
+
+// Note: even though this variable isn't used directly, this call connects us to the db.
+var db = mongoose.connect('mongodb://localhost/subdoc1to1');
+
 /////////////////////////////////////////////////////////////////////////////////////////// MONGOOSE
 
 /* Example application JSON:
@@ -161,11 +166,6 @@ var removeApplication = function (req, res) {
   }
   
 };
-
-////////////////////////////////////////////////////////////////////////////////////// DB CONNECTION
-
-// Note: even though this variable isn't used directly, this call connects us to the db.
-var db = mongoose.connect('mongodb://localhost/subdoc1to1');
 
 ///////////////////////////////////////////////////////////////////////////////////////// MIDDLEWARE
 
