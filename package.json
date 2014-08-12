@@ -4,14 +4,17 @@
   "description": "",
   "main": "web.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/jasmine-node/bin/jasmine-node --verbose test"
   },
   "dependencies": {
     "express": "3.4.7",
-    "mongoose": "~3.8.7",
-    "q": "~1.0.1",
     "express-slash": "~1.0.0",
-    "lodash": "~2.4.1"
+    "frisby": "^0.8.1",
+    "karma": "~0.12.21",
+    "karma-jasmine": "~0.1.5",
+    "lodash": "~2.4.1",
+    "mongoose": "~3.8.7",
+    "q": "~1.0.1"
   },
   "engines": {
     "node": "0.10.x"
