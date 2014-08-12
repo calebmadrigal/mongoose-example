@@ -56,3 +56,8 @@ Delete application:
 
     curl -X DELETE http://localhost:3000/reissueapp/2/
 
+## Running tests
+
+    npm test
+
+
